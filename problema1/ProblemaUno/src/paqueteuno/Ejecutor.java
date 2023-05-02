@@ -1,20 +1,46 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package paqueteuno;
 
-/**
- *
- * @author JosephMatheo
- */
-public class Ejecutor {
+import paquetedos.Terreno;
 
-    /**
-     * @param args the command line arguments
-     */
+
+public class Ejecutor {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        // Crear 2 Objetos de tipo Terreno
+        
+        Terreno tr = new Terreno();
+        
+        // Valores de entrada
+        
+        double costo_terreno;
+        int ancho = 100;
+        int largo = 120;
+        double area;
+        double valorMetroCuadrado = 20.00;               
+        
+        
+        // Establecer valores 
+        
+        tr.establecerAncho(ancho);
+        tr.establecerLargo(largo);
+        tr.establecerValorMetroCuadrado(valorMetroCuadrado);
+        
+        // Llamamos al metodo calcularCostoTerreno y calcularArea
+        
+        tr.calcularArea();
+        tr.calcularCostoTerreno();
+        
+        
+        // Se presentan los datos
+        
+        System.out.printf("Costo de un Terreno\n\nCosto del Terreno: %.2f\n"
+                + "Ancho del Terreno: %d\nLargo del Terreno: %d\n"
+                + "Area del Terreno: %.2f\n" + "Valor Metro Cuadrado: %.2f\n", 
+                tr.obtenerCosto_Terreno(),
+                tr.obtenerAncho(), tr.obtenerLargo(),
+                tr.obtenerArea(), tr.obtenerValorMetroCuadrado());
+        
     }
     
 }

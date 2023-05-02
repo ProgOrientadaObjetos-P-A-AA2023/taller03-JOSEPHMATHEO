@@ -20,7 +20,7 @@ public class Ejecutor {
         double valorMetroCuadrado = 20.00;               
         
         
-        // Establecer valores 
+        // Metodos establecer para asignarles valores a los atributos del obejto
         
         tr.establecerAncho(ancho);
         tr.establecerLargo(largo);

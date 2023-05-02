@@ -1,6 +1,7 @@
 package paqueteuno;
 
 public class FacturaTelefono {
+    
     private String numeroTelefono;
     private double minutosMes;
     private double valorMinuto;

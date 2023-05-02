@@ -6,7 +6,7 @@ public class Ejecutor {
 
     public static void main(String[] args) {
         
-        // Creacion de un Objeto de tipo Instituciones Educativas
+        // Creacion de un Objeto de tipo InstitucionesEducativas
         
         InstitucionesEducativas ie = new InstitucionesEducativas();
         
@@ -37,7 +37,8 @@ public class Ejecutor {
         
         System.out.printf("\nAdministracion de Instituciones Educativas:\n"
                 + "\nNombre de la Institucion: %s\n" + "Tipo de Institucion: %s\n"
-                + "Numero de Alumnos: %d\n" + "Numero de Docentes: %d\n" + "Numero de Sedes: %d\n" + "Gastos Proyectado por Estudiante: %.2f\n" + "Presupuesto: %.2f\n", 
+                + "Numero de Alumnos: %d\n" + "Numero de Docentes: %d\n" + "Numero de Sedes: %d\n" 
+                + "Gastos Proyectado por Estudiante: %.2f\n" + "Presupuesto: %.2f\n", 
                 ie.obtenerNombre(),
                 ie.obtenerTipoDeInstitucion(), ie.obtenerNumAlumnos(),
                 ie.obtenerNumDocentes(), ie.obtenerNumSedes(), 
